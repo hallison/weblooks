@@ -1,0 +1,115 @@
+/**
+ * Theme Name : Webtoplet
+ * Theme URI  : http://hallison.batista.nom.br/projetos/webtoplet
+ * Description: This CSS define icons styles.
+ * Version    : 0.1
+ * Author     : Hallison Batista
+ * Author URI : http://hallison.batista.nom.br
+ */
+
+.icon-accessories-text-editor {
+  background : transparent url('../images/icon-accessories-text-editor.png') no-repeat center center;
+}
+
+.icon-dialog-information {
+  background : transparent url('../images/icon-dialog-information.png') no-repeat center center;
+}
+
+.icon-dialog-warning {
+  background : transparent url('../images/icon-dialog-warning.png') no-repeat center center;
+}
+
+.icon-document-open {
+  background : transparent url('../images/icon-document-open.png') no-repeat center center;
+}
+
+.icon-document-print {
+  background : transparent url('../images/icon-document-print.png') no-repeat center center;
+}
+
+.icon-edit-find {
+  background : transparent url('../images/icon-edit-find.png') no-repeat center center;
+}
+
+.icon-folder {
+  background : transparent url('../images/icon-folder.png') no-repeat center center;
+}
+
+.icon-go-home {
+  background : transparent url('../images/icon-go-home.png') no-repeat center center;
+}
+
+.icon-internet-group-chat {
+  background : transparent url('../images/icon-internet-group-chat.png') no-repeat center center;
+}
+
+.icon-internet-mail {
+  background : transparent url('../images/icon-internet-mail.png') no-repeat center center;
+}
+
+.icon-internet-news-reader {
+  background : transparent url('../images/icon-internet-news-reader.png') no-repeat center center;
+}
+
+.icon-mail-attachment {
+  background : transparent url('../images/icon-mail-attachment.png') no-repeat center center;
+}
+
+.icon-network-workgroup {
+  background : transparent url('../images/icon-network-workgroup.png') no-repeat center center;
+}
+
+.icon-office-calendar {
+  background : transparent url('../images/icon-office-calendar.png') no-repeat center center;
+}
+
+.icon-package-x-generic {
+  background : transparent url('../images/icon-package-x-generic.png') no-repeat center center;
+}
+
+.icon-preferences-desktop-theme {
+  background : transparent url('../images/icon-preferences-desktop-theme.png') no-repeat center center;
+}
+
+.icon-printer {
+  background : transparent url('../images/icon-printer.png') no-repeat center center;
+}
+
+.icon-process-stop {
+  background : transparent url('../images/icon-process-stop.png') no-repeat center center;
+}
+
+.icon-system-file-manager {
+  background : transparent url('../images/icon-system-file-manager.png') no-repeat center center;
+}
+
+.icon-system-search {
+  background : transparent url('../images/icon-system-search.png') no-repeat center center;
+}
+
+.icon-system-users {
+  background : transparent url('../images/icon-system-users.png') no-repeat center center;
+}
+
+.icon-text-html {
+  background : transparent url('../images/icon-text-html.png') no-repeat center center;
+}
+
+.icon-text-x-generic {
+  background : transparent url('../images/icon-text-x-generic.png') no-repeat center center;
+}
+
+.icon-text-x-script {
+  background : transparent url('../images/icon-text-x-script.png') no-repeat center center;
+}
+
+.icon-user-home {
+  background : transparent url('../images/icon-user-home.png') no-repeat center center;
+}
+
+.icon-x-office-address-book {
+  background : transparent url('../images/icon-x-office-address-book.png') no-repeat center center;
+}
+
+/**/
+

@@ -1,0 +1,13 @@
+
+1.0m1, 2008.06.11, Hallison V Batista <hallison.batista@gmail.com>
+
+  * Theme looks like Clearlooks GTK engine.
+  * Stylesheets files:
+    * Header style.
+    * Tab bar using unordered list tag.
+    * Tool bar using divisor container tag.
+    * Form elements.
+    * Icons style using resources of the Tango Icon Gallery desktop project.
+
+
+

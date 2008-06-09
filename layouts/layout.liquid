@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>{{ site.title }} :: {{ section.name }}</title>
+  <meta name="generator" content="Mephisto" />
+  {{ 'utils'    | javascript }}
+  {{ 'main'     | stylesheet }}
+  {{ 'header'   | stylesheet }}
+  {{ 'tabset'   | stylesheet }}
+  {{ 'toolbar'  | stylesheet }}
+  {{ 'icon'     | stylesheet }}
+  {{ 'form'     | stylesheet }}
+  {{ 'entry'    | stylesheet }}
+  {% comment %}
+  {{ 'footer'  | stylesheet }}
+  {% endcomment %}
+  {{ site.home_section | articles_feed }}
+</head>
+
+<body class="layout">
+
+<div id="content">
+
+  <div id="header">
+
+    <h1 id="site-title"><a href="/">{{ site.title }}</a></h1>
+
+    <p id="site-description">{{ site.subtitle }}</p>
+
+  </div><!--header-->
+  {% comment %}
+  {% endcomment %}
+
+  <ul id="tabset">
+
+    <li {% if site.home_section.current %}id="tab-active"{% endif %} class="column tab">
+      <a {% if site.home_section.current %}id="tab-link-current"{% endif %} class="tab-link" href="{{site.home_section.url}}" title="{{site.home_section.name}}">{{site.home_section.name }}</a>
+    {% for section in site.page_sections %}
+    <li {% if section.current %}id="tab-active"{% endif %} class="column tab">
+      <a {% if section.current %}id="tab-link-current"{% endif %} class="tab-link" href="{{section.url}}" title="{{section.name}}">{{section.name }}</a>
+    {% endfor %}
+  </ul><!--tabset-->
+
+  <div id="toolbar">
+
+    <a class="mini-button" href="/" title="Home"><span class="icon-go-home">&nbsp;</span></a>
+    <a class="mini-button" href="#" title="Print current page" onclick="print()"><span class="icon-document-print">&nbsp;</span></a>
+    <a class="mini-button" href="/feed/atom.xml" title="News feed"><span class="icon-internet-news-reader">&nbsp;</span></a>
+    <a class="mini-button" href="#" title="Archive"><span class="icon-system-file-manager">&nbsp;</span></a>
+    <a class="mini-button" href="#" title="Tags"><span class="icon-x-office-address-book">&nbsp;</span></a>
+    <a class="mini-button" href="#" title="Contact author"><span class="icon-internet-mail">&nbsp;</span></a>
+
+    <form id="search-form" class="mini-form" method="get" action="/search">
+      <input class="text-field short inline" type="text" id="q" name="q" value="Search ..." onfocus="this.value = ''" onblur="this.value = 'Search ...'"/>
+      <!--button class="mini-button inline" type="submit"><span class="icon-system-search inline">&nbsp;</span></button-->
+    </form>
+
+  </div><!--toolbar-->
+
+  <div class="entry">
+
+    {{ content_for_layout }}
+
+  </div><!--entry-->
+  
+
+  <div class="sidebar">
+
+    <div>
+      
+      <h2 class="title">Categories</h2>
+
+      <ul class="list">
+        {% for category in site.blog_sections %}
+        <li class="option">{{ category | link_to_section  }}</li>
+        {% endfor %}
+      </ul>
+
+      <h2 class="title">Pages</h2>
+
+      <ul>
+      {% for page in section.pages %}
+        <li>{{ page | link_to_page }}</li>
+      {% endfor %}
+      </ul>
+
+    </div>
+
+  </div><!--sidebar-->
+
+  {% comment %}
+  <div class="footer">
+
+    {{ site.title }} is proudly using the <a href="http://hallison.batista.nom.br/projetos/clearly">Clearly theme</a> originally designed by <a href="http://hallison.batista.nom.br">Hallison Batista</a>.
+    Powered by <a href="http://mephistoblog.com/">Mephisto</a>
+
+  </div><!--footer-->
+  {% endcomment %}
+
+</div><!--content-->
+
+</body>
+</html>
+

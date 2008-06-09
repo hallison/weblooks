@@ -1,0 +1,18 @@
+/**
+ * Theme Name : Weblooks
+ * Theme URI  : http://hallison.batista.nom.br/projetos/weblooks
+ * Description: This CSS toolbar style.
+ * Version    : 0.1
+ * Author     : Hallison Batista
+ * Author URI : http://hallison.batista.nom.br
+ */
+
+#toolbar {
+  height : 34px;
+  margin : 2px auto 2px auto;
+  padding : 2px auto 2px auto;
+  /*background : transparent url('../images/tab-bg.png') repeat-x left bottom;/**/
+  list-style : none;
+  border-bottom : 1px solid rgb(190,180,170);
+}
+

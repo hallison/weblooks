@@ -1,0 +1,83 @@
+/**
+ * Theme Name : Weblooks
+ * Theme URI  : http://hallison.batista.nom.br/projetos/weblooks
+ * Description: This CSS s and other components style for input data.
+ * Version    : 0.1
+ * Author     : Hallison Batista
+ * Author URI : http://hallison.batista.nom.br
+ */
+
+.mini-button {
+  width : 32px;
+  height : 32px;
+  margin : 0px 1px 0px 1px;
+  float : left;
+  display : block;
+  /*background : transparent url('../images/mini-button.png') no-repeat left top;/**/
+  border : none;
+}
+
+.mini-button * {
+  width : inherit;
+  height : inherit;
+  float : left;
+  display : block;
+}
+
+.mini-button:focus,
+.mini-button:hover {
+  background : transparent url('../images/mini-button.png') no-repeat center center;
+}
+
+.mini-button:active   {
+  background : transparent url('../images/mini-button.png') no-repeat center bottom;
+}
+
+.mini-form {
+  width : 192px;
+}
+
+.text-field {
+  height : 20px;
+  margin : 0px;
+  padding : 6px 4px 6px 4px;
+  border : none;
+}
+
+.text-field.long   {
+  width : 248px;
+  background : transparent url('../images/text-field-long.png') no-repeat top left;
+}
+
+.text-field.normal {
+  width : 184px;
+  background : transparent url('../images/text-field-normal.png') no-repeat top left;
+}
+
+.text-field.short {
+  width : 120px;
+  background : transparent url('../images/text-field-short.png') no-repeat top left;
+}
+
+.text-field:focus,
+.text-field:hover {
+  background-color : rgb(255,255,255);
+  background-position : bottom left;
+}
+
+.text-area {
+  width : 248px;
+  height : 244px;
+}
+
+#search-form {
+  width : auto;
+  margin : 0px 2px 0px 2px;
+  float : left;
+}
+
+#search-form #search-text-field {
+  padding-right : 22px;
+  background : rgb(234,234,234) url(' ../images/icon-edit-find.png') no-repeat right center;
+}
+

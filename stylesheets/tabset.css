@@ -1,0 +1,51 @@
+/**
+ * Theme Name : Weblooks
+ * Theme URI  : http://hallison.batista.nom.br/projetos/weblooks
+ * Description: This CSS define tabset.
+ * Version    : 0.1
+ * Author     : Hallison Batista
+ * Author URI : http://hallison.batista.nom.br
+ *
+ *
+ * References:
+ *  - http://www.alistapart.com/articles/slidingdoors
+ */
+
+#tabset {
+  width : inherit;
+  height : 32px;/**/
+  padding : 4px 0px 0px 4px;
+  background : transparent url('../images/tab-bg.png') repeat-x left bottom;
+  list-style : none;
+}
+
+.tab {
+  /*width : 8em; /* Fixed size */
+  padding : 0px 0px 0px 16px; /* Auto-size */
+  background : transparent url('../images/tab-left.png') no-repeat left top;
+}
+
+.tab .tab-link {
+  padding : 5px 16px 5px 0px; /* Auto-size */
+  display : block;
+  text-align : center;
+  background : transparent url('../images/tab-right.png') no-repeat right top;
+}
+
+.tab .tab-link:focus,
+.tab .tab-link:active,
+.tab .tab-link:hover  {
+}
+
+.tab a:active  {
+}
+
+.tab#tab-active {
+  background : transparent url('../images/tab-active-left.png') no-repeat left top;
+}
+
+a#tab-link-current {
+  background : transparent url('../images/tab-active-right.png') no-repeat right top;
+}
+
+

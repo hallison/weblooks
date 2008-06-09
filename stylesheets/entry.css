@@ -1,0 +1,33 @@
+.entry {
+  width : 504px;
+  margin : 2px;
+  background-color : rgb(255,255,255);
+  border : 1px solid rgb(190,180,170);
+}
+
+#post-excerpt h1, #post-body h1,
+#post-excerpt h2, #post-body h2,
+#post-excerpt h3, #post-body h3,
+#post-excerpt h4, #post-body h4,
+#post-excerpt h5, #post-body h5 {
+  margin : 0.0em;
+  padding : 0.5em;
+}
+
+#post-excerpt p, #post-body p {
+  margin : 0px;
+  padding : 0.5em;
+  text-align : justify;
+  line-height : 1.5em;
+}
+
+#post-excerpt ul, #post-body ul {
+  margin-left : 4.0em;
+}
+
+#post-excerpt pre, #post-body pre {
+  font-family : monaco,liberation sans mono,dejavu sans mono,courier new,courier,monospace;
+  font-size   : 1.0em;
+}
+
+#post-published_at{}

@@ -1,0 +1,67 @@
+    CONTENT
+    
+    <div class="block">
+    <!-- feedburner works great for delivering feeds, and managing them too -->
+      <h3 class="feedheader"><a href="/feed/atom.xml">Subscribe</a></h3>
+      <p>Keep up-to-date with the <strong>micro</strong> theme using rss!</p>
+      <p class="mt5 tar"><small>Delivered by <a href="http://www.feedburner.com" target="_blank">FeedBurner</a></small></p>
+    </div>
+    {% comment %}
+    <div>
+
+      <h3>Tags</h3>
+      <ul>
+        {% for tag in site.tags %}
+        <li><a href="{{ tag | tag_url }}">{{ tag | capitalize }}</a> ({{ tag | size }})</li>
+        {% endfor %}
+      </ul>
+
+    </div>
+
+    {% if article %}
+    <div>
+
+      <h3>Article Tags</h3>
+      <ul>
+        {% for tag in article.tags %}
+        <li><a href="{{ tag | tag_url }}">{{ tag | capitalize }}</a> ({{ tag | size }})</li>
+        {% endfor %}
+      </ul>
+
+    </div>
+    {% endif %}
+    {% if section.months.size > 0 %}
+    <div class="block">
+      <h3>Archives</h3>
+      <ul>
+      {% for month in section.months %}
+      <li>{{ section | link_to_month: month }} <small class="soft fs11">({{ section | monthly_articles: month | size }})</small></li>
+      {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    {% endcomment %}
+
+SIDEBAR
+
+
+  <div class="sidebar">
+
+    <form class="searh-form" method="get" action="/search">
+      <input class="text-field" type="text" id="q" value="" name="q" />
+    </form>
+
+    <div class="optionlist">
+      
+      <h2 class="title">Categories</h2>
+
+      <ul class="list">
+        {% for category in site.blog_sections %}
+        <li class="option">{{ category | link_to_section  }}</li>
+        {% endfor %}
+      </ul>
+
+    </div>
+
+  </div><!--sidebar-->
+

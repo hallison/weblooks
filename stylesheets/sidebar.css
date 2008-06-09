@@ -1,0 +1,12 @@
+.sidebar {
+  height : 100%;
+  float : right;
+}
+
+.sidebar .optionlist {
+  margin  : 0.5em auto 0.5em auto;
+  padding : 0.5em;
+  /*background-color : rgb(210,210,210);*/
+}
+
+

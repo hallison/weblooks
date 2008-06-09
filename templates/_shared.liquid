@@ -1,0 +1,42 @@
+    {% for article in articles %}
+    <div class="post">
+
+      <h1 id="post-title">{{ article | link_to_article }}</h1> 
+
+      <span id="post-publish">Published at {{ article.published_at | date: '%Y.%m.%d %H:%M:%S' }}</span>
+
+      <div id="post-excerpt">
+      {% if article.excerpt %}
+        {{ article.excerpt }}
+        {% unless mode == 'single' %}
+        <a href="{{ article.url }}">Read the rest of this entry</a>
+        {% endunless %}
+      {% else %}
+        {% unless mode == 'single' %}
+        {{ article.body }}
+        {% endunless %}
+      {% endif %}
+    </div><!--post-excerpt-->
+
+      {% if mode == 'single' %}
+      <div id="post-body">
+        {{ article.body }}
+      </div><!--post-body-->
+      {% endif %}
+      
+      <div id="post-metadata">
+        <span>Posted by {{ article.author.login }}</span>
+        <span>Filed in {{ article | linked_section_list }}</span>
+        {% unless mode == 'single' %}
+          {% if article.accept_comments %}<a href="{{ article.url }}#comments">{{ article.comments_count | pluralize: 'comments' }} &#187;</a>{% endif %}
+        {% endunless %}
+      </div><!--post-metadata-->
+
+    </div><!--post-->
+    {% endfor %}
+    {% if mode == 'single' %}
+    <div>
+      {% include 'comments' %}
+    </div>
+    {% endif %}
+

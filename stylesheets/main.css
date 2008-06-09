@@ -1,0 +1,94 @@
+/**
+ * Theme Name : Weblooks
+ * Theme URI  : http://hallison.batista.nom.br/projetos/weblooks
+ * Description: This CSS define main styles.
+ * Version    : 0.1
+ * Author     : Hallison Batista
+ * Author URI : http://hallison.batista.nom.br
+ */
+
+/**
+ * Colors:
+ *    header border     : 250,180,080
+ *    header background : 120,180,240
+ *    focus background  : 090,160,180
+ *    focus foreground  : white
+ *
+ *    background on     : 240,235,230
+ *    background off    : 220,220,220
+ *    border            : 210,200,190
+ *    tab border top on : 130,160,180
+ *    component border outside  : 110,100,100
+ *    component border inside   : 190,180,170
+ *
+ *    background top title on  : 160,185,190
+ *    background top title off : 120,145,160
+ */
+
+* {
+  font-family : luxi sans,liberation sans,dejavu sans,strebuchet ms,bitstream vera sans,verdana,arial,tahoma,sans-serif;
+  font-size   : 1.0em;
+  margin      : 0.0em;
+  padding     : 0.0em;
+}
+
+
+h1 { font-size : 1.5em; }
+h2 { font-size : 1.4em; }
+h3 { font-size : 1.3em; }
+h4 { font-size : 1.2em; }
+h5 { font-size : 1.1em; }
+
+a { text-decoration : none; }
+
+
+/*ul { margin : auto auto auto 2.0em; }/**/
+
+/**
+ * Layout 800x600.
+ */
+
+.layout {
+  width : 760px;
+  height : inherit;
+  margin-top : 8px;
+  margin-right : auto;
+  margin-bottom : 8px;
+  margin-left : auto;
+  background-color : rgb(160,185,190);
+}
+
+#content {
+  background-color : rgb(240,235,230);
+}
+
+.column {
+  float : left;
+}
+
+.inline {
+  float : left;
+  display : inline;
+}
+
+.block {
+  float : left;
+  display : block;
+}
+
+.container {
+  clear : both;
+}
+
+.layout #content {
+  border : 2px solid rgb(120,145,160);/**/
+}
+
+#footer {
+  width   : inherit;
+  height  : 2em;
+  padding : 0em;
+  
+  /*background-color : rgb(120,180,240);*/
+}
+

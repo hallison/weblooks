@@ -1,0 +1,23 @@
+/**
+ * Theme Name : Webtop
+ * Theme URI  : http://hallison.batista.nom.br/projetos/clear-fu
+ * Description: This CSS define header style for Webtop theme.
+ * Version    : 0.1
+ * Author     : Hallison Batista
+ * Author URI : http://hallison.batista.nom.br
+ */
+
+/**
+ * Header formats.
+ */
+
+#header {
+  width  : inherit;
+  height : 64px;
+  /*background-color : rgb(120,180,240);/**/
+}
+
+#site-title,
+#site-description {
+}
+
