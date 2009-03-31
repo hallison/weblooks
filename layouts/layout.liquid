@@ -25,13 +25,11 @@
 
   <div id="header">
 
-    <h1 id="site-title"><a href="/">{{ site.title }}</a></h1>
+    <h1 id="site-title"><a href="{{ site.home_section }}">{{ site.title }}</a></h1>
 
     <p id="site-description">{{ site.subtitle }}</p>
 
   </div><!--header-->
-  {% comment %}
-  {% endcomment %}
 
   <ul id="tabset">
 
@@ -52,8 +50,8 @@
     <a class="mini-button" href="#" title="Tags"><span class="icon-x-office-address-book">&nbsp;</span></a>
     <a class="mini-button" href="#" title="Contact author"><span class="icon-internet-mail">&nbsp;</span></a>
 
-    <form id="search-form" class="mini-form" method="get" action="/search">
-      <input class="text-field short inline" type="text" id="q" name="q" value="Search ..." onfocus="this.value = ''" onblur="this.value = 'Search ...'"/>
+    <form id="search-form" class="mini-form" method="get" action="{{ site.search_path }}">
+      <input class="text-field short inline" type="text" id="q" name="q" value="{{ site.search_path | capitalize }}" onfocus="this.value = ''" onblur="this.value = '{{ site.search_path | capitalize }}'"/>
       <!--button class="mini-button inline" type="submit"><span class="icon-system-search inline">&nbsp;</span></button-->
     </form>
 
