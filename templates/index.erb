@@ -1,1 +1,18 @@
-{% include 'shared' %}
+<% for post in site[:posts] %>
+<div class="post">
+
+  <h1 id="post-title"><a href="<%= post[:link] %>"><%= post[:title] %></a></h1> 
+
+  <span id="post-publish">By <%= site[:author] %>, published at <%= post[:publish_date] %>, tagged with <%= post[:tag_links] %></span>
+
+  <div id="post-summary">
+    <%= post[:summary] %>
+  </div><!--post-summary-->
+
+  <div id="post-metadata">
+  </div><!--post-metadata-->
+
+</div><!--post-->
+
+<% end %>
+
