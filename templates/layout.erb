@@ -3,9 +3,9 @@
   
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>{{ site.title }} :: {{ section.name }}</title>
-  <meta name="generator" content="Mephisto" />
-  {{ 'utils'    | javascript }}
+  <title><%= site.title %> :: <% section.name %></title>
+  <meta name="generator" content="<%= site.generator %>" />
+  {{ 'utils'    | javascr
   {{ 'main'     | stylesheet }}
   {{ 'header'   | stylesheet }}
   {{ 'tabset'   | stylesheet }}
